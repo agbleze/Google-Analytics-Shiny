@@ -404,5 +404,11 @@ shinyServer(function(input, output, session) {
    observe(addHoverAnim(session, "regress_model", "pulse"))
    observe(addHoverAnim(session, "seasonal_forecast", "pulse"))
    
+   
+     autoInvalidate <- reactiveTimer(10000)
+  observe({
+    autoInvalidate()
+    cat(".")
+  })
 })
 
