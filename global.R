@@ -5,35 +5,6 @@ usertypedata_mean <- GA_usertype_transformedData%>%
   summarise(across(everything(), mean))%>%
   ungroup()
 
-library(shiny)
-library(readr)
-library(forecast)
-library(tidyverse)
-library(ggplot2)
-library(fpp2)
-library(lubridate)
-library(GGally)
-library(dplyr)
-library(magrittr)
-library(labelled)
-library(gtsummary)
-library(bfast)
-library(ggstatsplot)
-library(googleVis)
-library(formattable)
-library(fontawesome)
-
-library(shinydashboard)
-library(shinycssloaders)
-library(shinyanimate)
-library(shinydashboardPlus)
-library(shinyEffects)
-library(shinybusy)
-library(shinyBS)
-library(magrittr)
-library(waiter)
-library(fresh)
-
 
 
 ######################## Transaction usertype data reactive  ##########################################  
